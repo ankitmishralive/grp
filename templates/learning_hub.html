@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrovision - Learning Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Color */
+        .bg-custom-green {
+            background-color: #4CAF50;
+        }
+
+        .text-custom-green {
+            color: #4CAF50;
+        }
+
+        .border-custom-green {
+            border-color: #4CAF50;
+        }
+
+        /* Reduced Video Size */
+        .video-container {
+            padding-top: 25%; /* Adjust the aspect ratio as needed */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Fixed Sidebar -->
+    <div class="w-64 h-screen bg-green-600 text-white fixed top-0 left-0">
+        <div class="p-4">
+            <h2 class="text-3xl font-bold">Agrovision</h2>
+        </div>
+        <ul class="space-y-4 p-4">
+            
+            <li>
+                <a href="/" class="flex items-center p-2 text-lg hover:bg-green-500 rounded-lg">
+                    <i class="fas fa-users mr-2"></i> Community
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-2 text-lg hover:bg-green-500 rounded-lg">
+                    <i class="fas fa-money-bill mr-2"></i> Loan
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-2 text-lg hover:bg-green-500 rounded-lg">
+                    <i class="fas fa-chart-line mr-2"></i> Crop Rates
+                </a>
+            </li>
+            <li>
+                <a href="/learninghub" class="flex items-center p-2 text-lg hover:bg-green-500 rounded-lg">
+                    <i class="fas fa-book mr-2"></i> Learning Hub
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-2 text-lg hover:bg-green-500 rounded-lg">
+                    <i class="fas fa-robot mr-2"></i> Chatbot
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="ml-64 p-6">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-8 text-custom-green">Learning Hub</h1>
+            
+            <!-- Organic Farming Section -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-semibold mb-4 text-gray-800">Organic Farming</h2>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">Explore the principles and practices of Organic Farming through this comprehensive playlist. Learn how to grow your own food sustainably and organically.</p>
+                    <div class="relative video-container">
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PL_JBLkeIIhm6HxS_30pIWoR8TGdgCrZwm" 
+                                class="absolute top-0 left-0 right-30 w-full h-full" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vertical Farming Section -->
+            <section>
+                <h2 class="text-3xl font-semibold mb-4 text-gray-800">Vertical Farming</h2>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">Dive into the world of Vertical Farming. Discover innovative methods for growing crops in vertical stacks, maximizing space and efficiency in urban environments.</p>
+                    <div class="relative video-container">
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PL_JBLkeIIhm6HxS_30pIWoR8TGdgCrZwm" 
+                                class="absolute top-0 left-0 w-full h-full" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
